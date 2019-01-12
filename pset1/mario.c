@@ -1,8 +1,6 @@
 # include <cs50.h>
 # include <stdio.h>
 
-//int GetHeight();
-
 
 // get height and check is it in range, if not - ask again
 int GetHeight(void)
@@ -16,7 +14,7 @@ int GetHeight(void)
     return x;
 }
 
-// retturn value
+// return value
 int main(void)
 {
     int h = GetHeight();
@@ -24,12 +22,12 @@ int main(void)
     for (int i=1; i <= h; i++)
     {
         //add spaces
-        for (int spaces=i-h; spaces <= 0; spaces++)
+        for (int spaces=h-i; spaces >= 1; spaces--)
         {
             printf(" ");
         }
         //add #'s
-        for (int t=0; t <= i; t++)
+        for (int t=1; t <= i+1; t++)
         {
             printf("#");
         }
