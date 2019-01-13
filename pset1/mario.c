@@ -10,7 +10,7 @@ int GetHeight(void)
     {
         x = get_int("Height: ");
     }
-    while (x > 23 || x < 0);
+    while (x > 23|| x < 0);
     return x;
 }
 
@@ -27,7 +27,7 @@ int main(void)
             printf(" ");
         }
         //add #'s
-        for (int t=1; t <= i+1; t++)
+        for (int dash=1; dash <= i+1; dash++)
         {
             printf("#");
         }
